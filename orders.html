@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders page</title>
+    <link rel="stylesheet" href="oreders.css">
+</head>
+<body>
+    <div class="head">
+        <h1>Orders system</h1>
+        <p>Manage orders here</p>
+        <p style="float: right; background-color: teal;" ><a href="main-screen.html" style="color: white">Back to main screen</a></p>
+    </div>
+    <div class="prodnums">
+        <h3 style="display: inline;">There is currently  </h3>
+        <h3 style="display: inline; background-color: brown;" id="numa" >num</h3>
+        <h3 style="display: inline;">products on the system</h3>
+        
+    </div>
+    <select name="cats" id="cats" onchange="removeprods();conload();" >
+        <option>اختر قسما</option>
+    </select>
+    <select name="product" id="prods" onclick="getData3()" onchange="getprodinfo3()">
+        <option>اختر صنف من الأصناف</option>
+    </select>
+    <button style="display: inline-block;" onclick="getcat3()">Refreash data</button>
+
+    <div class="headlines">
+        <h4 style="display: inline; margin: 100px;" >Full name</h4>
+        <h4  style="display: inline;">Price</h4>
+        <h4  style="display: inline; margin-left: 20px;">Quantaty</h4>
+    </div>
+    <div class="details">
+        <h4 id="nam" style="display: inline; margin: 110px;">nona</h4>
+        <h4 id="prc"style="display: inline; " onchange="calctota()">nan</h4>
+        <h4 style="margin-left: 20px; display: inline;">X</h4>
+        <input type="number" id="qty" style="width: 60px;" onchange="calctota()">
+        <h4 style="margin-left: 20px; display: inline;">=</h4>
+        <h4 id="total" style="margin-left: 20px; display: inline; background-color: brown;">Total</h4>
+        <button style="width: 5%; margin-left: 20px" onclick="insertintotable()">اضافة</button>
+    </div>
+    <button style="float:right ;" onclick="deleteall()">مسح كامل الاوردر</button>
+    <hr style="margin-top: 10px;">
+    <div class="orderdet">
+        <ul id="orderit">
+
+        </ul>
+    </div>
+
+    
+    <table style="width: 100%; text-align: center;" id="tableord">
+        <tr>
+          <th>الصنف</th>
+          <th>الكمية</th>
+          <th>سعر الوحدة</th>
+          <th>الاجمالى</th>
+          <th>حذف</th>
+        </tr>
+      </table>
+
+    <hr style="margin-top: 10px;">
+    <div class="totaldiv"></div>
+    <h1 style="display: inline-block; background-color: brown;" id="totord">0</h1>
+    <h1 style="display: inline-block;">الاجمالى</h1>
+    <button id="save" onclick="saveorder()">حفظ الاوردر</button>
+    <hr>
+    <hr>
+    <h1 style="text-align: center; margin-top: 30px; margin-bottom: 20px;">الطلبات السابقة</h1>
+    <hr>
+    <hr>
+    <table>
+        <tr>
+            <th>رقم الأوردر</th>
+            <th>تاريخ الاوردر</th>
+            <th>الأصناف</th>
+            <th>اسعار الوحدات</th>
+            <th>الكميات</th>
+            <th>الأجمالى على الصنف</th>
+            <th>اجمالى الفاتورة</th>
+        </tr>
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+
+
+<script src="orders.js"></script>
+</body>
+</html>

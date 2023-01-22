@@ -1,0 +1,21 @@
+body 
+{
+    font-family: 'segoe ui light';
+    background-color: rgba(12, 11, 11, 0.897);
+    color:#289497 !important;
+}
+input,textarea{
+    background-color: black !important;
+    color:#289497 !important;
+
+}
+
+/* 
+.text-mine
+{
+    color: #ff206e;
+}
+.bg-mine 
+{
+    background-color: #ff206e;
+} */

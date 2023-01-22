@@ -1,0 +1,52 @@
+body {
+  background-color: #24353f;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.inputForm {
+  background-color: #24353f;
+  box-shadow: -5px 2px 54px -9px rgb(0 0 0);
+}
+.form-control {
+  color: #fff !important;
+}
+.form-control:focus {
+  background-color: #24353f;
+}
+input:focus {
+  box-shadow: 0 0 0 0 transparent !important;
+}
+.inputForm h1 {
+  font-size: 40px;
+  padding: 20px;
+}
+.inputForm input {
+  background-color: transparent;
+}
+.inputForm a {
+  text-decoration: none;
+  color: #fff;
+}
+/* ?css about Home page */
+.home-massage {
+  background-color: #24353f;
+  box-shadow: -5px 2px 54px -9px rgb(0 0 0);
+  padding: 48px;
+}
+.navbar{
+  background-color: #24353f;
+  box-shadow: -5px 2px 54px -9px rgb(0 0 0);
+}
+
+.navbar-light .navbar-brand{
+  color: #fff;
+}
+.navbar-light .navbar-brand:focus,.navbar-light .navbar-brand:hover{
+  color: #fff;
+}
+.btn-outline-warning {
+  color: rgba(255,255,255,.5);
+}
+.btn-outline-warning:hover{
+  color: #fff;
+}
